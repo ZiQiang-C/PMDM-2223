@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PMDM-2223</string>
+    <string name="mas">+1</string>
+    <string name="reset">重置</string>
+    <string name="Resetall">重置全部</string>
+</resources>

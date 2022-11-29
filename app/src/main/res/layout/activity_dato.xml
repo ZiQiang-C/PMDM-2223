@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UT03.ut03_EjemploDato.Dato">
+
+    <EditText
+        android:id="@+id/ut03_EjemploDateN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ut03_EjemploDateT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="telef"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/ut03_EjemploDateN"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ut03_EjemploDateN"
+        app:layout_constraintTop_toBottomOf="@+id/ut03_EjemploDateN" />
+
+    <Button
+        android:id="@+id/ut03_EjemploDato_mas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="@+id/ut03_EjemploDateT"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ut03_EjemploDateT" />
+
+    <TextView
+        android:id="@+id/ut03_EjemploDatoV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ut03_EjemploDato_mas" />
+
+    <Button
+        android:id="@+id/ut03_EjemploDatoRe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="@+id/ut03_EjemploDateT"
+        app:layout_constraintStart_toStartOf="@+id/ut03_EjemploDateT"
+        app:layout_constraintTop_toBottomOf="@+id/ut03_EjemploDateT"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/ut03_EjemploDataModi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Modi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/ut03_EjemploDateT"
+        app:layout_constraintTop_toBottomOf="@+id/ut03_EjemploDateT"
+        tools:ignore="MissingConstraints"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

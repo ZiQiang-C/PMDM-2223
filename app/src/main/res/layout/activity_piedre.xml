@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UT2.ut02_3.piedre">
+
+    <ImageButton
+        android:id="@+id/Piedra"
+        android:layout_width="75dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="36dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/rqjl9y2qe6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="240dp"
+        android:layout_height="65dp"
+        android:text="Pider,Papel,Tijera"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <ImageButton
+        android:id="@+id/Tijera"
+        android:layout_width="73dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="36dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/descarga"
+        app:layout_constraintBottom_toTopOf="@+id/Papel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toEndOf="@+id/Piedra"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/Papel"
+        android:layout_width="86dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="424dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/descarga__1_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Piedra"
+        app:layout_constraintVertical_bias="0.617" />
+
+    <TextView
+        android:id="@+id/pasaMiguel"
+        android:layout_width="251dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/piedreReset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Papel"
+        app:layout_constraintVertical_bias="0.203"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/piedreReset"
+        android:layout_width="231dp"
+        android:layout_height="54dp"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.961" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Miguel"
+        app:layout_constraintBottom_toTopOf="@+id/MiguelPuntu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.663"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pasaMiguel"
+        app:layout_constraintVertical_bias="0.706" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MI"
+        app:layout_constraintBottom_toTopOf="@+id/MiPuntu"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pasaMiguel"
+        app:layout_constraintVertical_bias="0.706" />
+
+    <TextView
+        android:id="@+id/MiPuntu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/MiguelPuntu"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pasaMiguel" />
+
+    <TextView
+        android:id="@+id/MiguelPuntu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pasaMiguel"
+        app:layout_constraintVertical_bias="0.449" />
+
+    <TextView
+        android:id="@+id/gana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/pasaMiguel"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/pasaMiguel"
+        app:layout_constraintTop_toBottomOf="@+id/pasaMiguel" />
+</androidx.constraintlayout.widget.ConstraintLayout>

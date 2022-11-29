@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">PMDM-2223</string>
+    <string name="mas">+1</string>
+    <string name="reset">rest</string>
+    <string name="Resetall">rest all</string>
+
+    <string-array name="Ciudad">
+        <item>Madrid</item>
+        <item>Santander</item>
+        <item>Santiago</item>
+    </string-array>
 </resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UT2.ut02_6_EnvioVuelta.A2"
+    tools:ignore="MissingClass">
+
+    <Button
+        android:id="@+id/ut02_6_A2_enviaA3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="enviar A3"
+        app:layout_constraintBottom_toBottomOf="@+id/ut02_6_A2_texto"
+        app:layout_constraintStart_toEndOf="@+id/ut02_6_A2_texto"
+        app:layout_constraintTop_toTopOf="@+id/ut02_6_A2_texto" />
+
+    <TextView
+        android:id="@+id/ut02_6_A2_visual"
+        android:layout_width="171dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="152dp"
+        android:text="recobo a1"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ut02_6_A2_texto"
+        android:layout_width="292dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="152dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Escriba el texto para enviar a A3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ut02_6_A2_visual" />
+
+    <Button
+        android:id="@+id/ut02_6_A2_volver"
+        android:layout_width="192dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="116dp"
+        android:text="volver"
+        app:layout_constraintEnd_toStartOf="@+id/ut02_6_A2_enviaA3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ut02_6_A2_texto"
+        app:layout_constraintTop_toBottomOf="@+id/ut02_6_A2_texto" />
+
+    <Button
+        android:id="@+id/ut02_6_A2_nuevaA1"
+        android:layout_width="207dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="116dp"
+        android:text="nueva A1"
+        app:layout_constraintEnd_toEndOf="@+id/ut02_6_A2_enviaA3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ut02_6_A2_texto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
