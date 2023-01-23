@@ -9,9 +9,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.room.Room;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.example.pmdm_2223.R;
 
@@ -25,6 +27,8 @@ public class Listacoger extends AppCompatActivity {
     BebidaTableDataBase db;
     BebidaTableDAO bebidaTableDao;
     Button nuevo;
+    ImageView image;
+    Uri uriCapturada;
     private BebidaAdapter.RecyclerViewClickListener listener;
 
     ActivityResultLauncher resultadoLauncher;
@@ -58,6 +62,7 @@ public class Listacoger extends AppCompatActivity {
                     bebidaTableLista= bebidaTableDao.getAll();
                     adapter = new BebidaAdapter(bebidaTableLista,listener);
                     recyclerView.setAdapter(adapter);
+                    //image guarta
 
                 });
 
@@ -82,6 +87,7 @@ public class Listacoger extends AppCompatActivity {
         recyclerView.setLayoutManager(LayoutManager);
 
         recyclerView.setItemAnimator(new DefaultItemAnimator());
+
         //Anades el adaptador al dispositivo
         recyclerView.setAdapter(adapter);
     }
@@ -94,7 +100,7 @@ public class Listacoger extends AppCompatActivity {
                 Intent intent= new Intent(getApplicationContext(),ModListaBebida.class);
                 intent.putExtra("nombre",bebidaTableLista.get(position).getNombre());
                 intent.putExtra("empresa",bebidaTableLista.get(position).getEmpresa());
-
+                intent.putExtra("img",bebidaTableLista.get(position).getImagen());
                 resultadoLauncher.launch(intent);
 
             }

@@ -19,7 +19,13 @@ public class BebidaTable {
 
     @ColumnInfo(name = "empresa")
     public String empresa;
+    @ColumnInfo(name = "imagen")
+    public String imagen;
 
+
+    public String getImagen() {
+        return imagen;
+    }
     public BebidaTable (){
         uid = UUID.randomUUID().toString();
     }
@@ -31,8 +37,9 @@ public class BebidaTable {
     public String getEmpresa() {
         return empresa;
     }
-    public BebidaTable(String nombre,String empresa) {
+    public BebidaTable(String nombre,String empresa,String imagen) {
         this.nombre = nombre;
         this.empresa=empresa;
+        this.imagen=imagen;
     }
 }

@@ -1,19 +1,18 @@
 package com.example.pmdm_2223.UT03.ut03_Bebida;
 
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.pmdm_2223.R;
-import com.example.pmdm_2223.UT03.ut03_Agenda.ListaAdapter;
-import com.example.pmdm_2223.UT2.ut02_1.Pracatica21;
 
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class BebidaAdapter extends RecyclerView.Adapter<BebidaAdapter.ViewHolder> {
@@ -29,12 +28,13 @@ public class BebidaAdapter extends RecyclerView.Adapter<BebidaAdapter.ViewHolder
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener  {
         private final TextView nombre;
         private final TextView empresa;
-
+        private final ImageView image;
 
         public ViewHolder( View view) {
             super(view);
             nombre=(TextView) view.findViewById(R.id.rowbebidaNombre);
             empresa=(TextView) view.findViewById(R.id.rowbebidaEmpresa);
+            image =(ImageView) view.findViewById(R.id.rowimageView);
             view.setOnClickListener(this);
         }
 
@@ -46,6 +46,7 @@ public class BebidaAdapter extends RecyclerView.Adapter<BebidaAdapter.ViewHolder
             return nombre;
         }
 
+        public  ImageView getImage(){return image;}
 
         @Override
         public void onClick(View view) {
@@ -64,7 +65,7 @@ public class BebidaAdapter extends RecyclerView.Adapter<BebidaAdapter.ViewHolder
     public void onBindViewHolder(@NonNull BebidaAdapter.ViewHolder viewHolder, int position) {
         viewHolder.getNombre().setText(bebidas.get(position).nombre);
         viewHolder.getEmpresa().setText(bebidas.get(position).empresa);
-
+        viewHolder.getImage().setImageURI(Uri.parse(bebidas.get(position).getImagen()));
 
 
     }
